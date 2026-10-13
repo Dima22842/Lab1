@@ -27,6 +27,7 @@ else:
     a=maximum
     b=max2
     c=minimum
+    
 i=0
 if (minimum!=0):
     c=1
@@ -54,6 +55,8 @@ while (c > 0):
     i+=1
     if (i>0):
         minimum-=10
+
+
 numbers = [(plus, "(+)"), (minus, "(-)"), (zero, "(0)")]
 numbers.sort(reverse=True)
 print(tab * 3 + tab.join(name for tipe, name in numbers))
