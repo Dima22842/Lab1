@@ -2,15 +2,15 @@ minus = 0
 plus = 0
 zero = 0
 
-sequence = open("sequence.txt", "r")
-for number in sequence:
-    num = float(number)
-    if num > 0:
-        plus += 1
-    elif num < 0:
-        minus += 1
-    else:
-        zero += 1
+with open("sequence.txt", "r") as sequence:
+    for number in sequence:
+        num = float(number)
+        if num > 0:
+            plus += 1
+        elif num < 0:
+            minus += 1
+        else:
+            zero += 1
 
 tab = "\033[0m    \033[0m"
 black = "\033[40m    \033[0m"
@@ -58,4 +58,3 @@ numbers = [(plus, "(+)"), (minus, "(-)"), (zero, "(0)")]
 numbers.sort(reverse=True)
 print(tab * 3 + tab.join(name for tipe, name in numbers))
     
-sequence.close()
