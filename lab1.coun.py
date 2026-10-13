@@ -2,9 +2,9 @@ minus = 0
 plus = 0
 zero = 0
 
-with open("sequence.txt", "r", encoding="utf-8") as file:
-    for line in file:
-        num = float(line)
+with open("sequence.txt", "r") as file:
+    for number in file:
+        num = float(number)
         if num > 0:
             plus += 1
         elif num < 0:
@@ -55,9 +55,7 @@ while (c > 0):
     if (i>0):
         minimum-=10
 numbers = [(plus, "(+)"), (minus, "(-)"), (zero, "(0)")]
-
 numbers.sort(reverse=True)
-
 print(tab * 3 + tab.join(name for value, name in numbers))
     
         
