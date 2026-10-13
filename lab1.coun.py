@@ -56,6 +56,6 @@ while (c > 0):
         minimum-=10
 numbers = [(plus, "(+)"), (minus, "(-)"), (zero, "(0)")]
 numbers.sort(reverse=True)
-print(tab * 3 + tab.join(name for value, name in numbers))
+print(tab * 3 + tab.join(name for tipe, name in numbers))
     
 sequence.close()
