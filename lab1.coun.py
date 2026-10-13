@@ -2,8 +2,8 @@ minus = 0
 plus = 0
 zero = 0
 
-file = open("sequence.txt", "r")
-for number in file:
+sequence = open("sequence.txt", "r")
+for number in sequence:
     num = float(number)
     if num > 0:
         plus += 1
@@ -58,4 +58,4 @@ numbers = [(plus, "(+)"), (minus, "(-)"), (zero, "(0)")]
 numbers.sort(reverse=True)
 print(tab * 3 + tab.join(name for value, name in numbers))
     
-file.close()
+sequence.close()
