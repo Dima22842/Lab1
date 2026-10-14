@@ -1,9 +1,12 @@
-import time;
-black= "\033[40m    \033[0m"
-white= "\033[0m    \033[0m"
+import time
+
+black = "\033[40m    \033[0m"
+tab = "    "
+
 while True:
-    print(black+white+black)
-    print(white+black+white)
-    print(black+white+black)
-    print(white)
+    print(f"{black}{tab}{black}")
+    print(f"{tab}{black}{tab}")
+    print(f"{black}{tab}{black}")
+    print(tab)
+
     time.sleep(0.5)
