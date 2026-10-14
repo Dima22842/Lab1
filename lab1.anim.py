@@ -2,6 +2,7 @@ import os
 import random
 import time
 
+
 tab = "    "
 
 while True:
